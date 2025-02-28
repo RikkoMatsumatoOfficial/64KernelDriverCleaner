@@ -1,5 +1,5 @@
 # 64KernelDriverCleaner
-A Kernel Driver that can be used for a cheat or malware base to circumvent common cache &amp; structure table checks. PsLoadedModuleList however requires a PG Bypass on (Some) Machines > 22H2 Win10, Not Win 11
+A Kernel Driver that can be used for a cheeto or malware base to circumvent common cache or structure table checks. PsLoadedModuleList however requires a PG Bypass on (Some) Machines > 22H2 Win10, Not Win 11
 ```cpp
 void CleanDriverSys(UNICODE_STRING driver_int, ULONG timeDateStamp) {
 	if (clear::clearCache(driver_int, timeDateStamp) == 0) {
