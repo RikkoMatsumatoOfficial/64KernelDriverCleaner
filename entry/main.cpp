@@ -73,8 +73,8 @@ extern "C" NTSTATUS OEPDriverEntry(_In_ PDRIVER_OBJECT DriverObject, _In_ PUNICO
 	*/
 
 	// Loader Drivers @ Host Driver
-	CleanDriverSys(UNICODE_STRING(RTL_CONSTANT_STRING(L"DriverK.sys")), 0x63EF9904); /* Cheat Driver (Current Driver) */
-	CleanDriverSys(UNICODE_STRING(RTL_CONSTANT_STRING(L"PROCEXP152.sys")), 0x611AB60D); /* Exploit-Vulnerable Driver (Mapping Driver) */
+	CleanDriverSys(UNICODE_STRING(RTL_CONSTANT_STRING(L"DriverK.sys")), 0x63EF9904);
+	CleanDriverSys(UNICODE_STRING(RTL_CONSTANT_STRING(L"PROCEXP152.sys")), 0x611AB60D);
 
 
 	KeLeaveGuardedRegion();
